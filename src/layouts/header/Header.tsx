@@ -50,25 +50,13 @@ const Header = ({ onePageHomeOne }: any) => {
               </div>
               <div className='col-xl-3 col-6'>
                 <div className='tp-header-main-right-2 d-flex align-items-center justify-content-xl-end'>
-                  <div className='tp-header-contact-2 d-flex align-items-center'>
-                    <div className='tp-header-contact-search search-open-btn d-none d-xxl-block'>
-                      <span onClick={() => setSearchOpen(true)}>
-                        <i className='fa-solid fa-magnifying-glass'></i>
+                  <div className='tp-hero-btn mr-30'>
+                    <Link className='tp-btn' href='/contact'>
+                      Download Our App{' '}
+                      <span>
+                        <i className='fa-regular fa-arrow-right'></i>
                       </span>
-                    </div>
-                    <div className='tp-header-contact-inner d-none d-xl-flex align-items-center'>
-                      <div className='tp-header-contact-icon'>
-                        <span>
-                          <i className='fa-solid fa-phone'></i>
-                        </span>
-                      </div>
-                      <div className='tp-header-contact-content'>
-                        <p>Requesting A Call:</p>
-                        <span>
-                          <a href='tel:555-0111'>(+234) 902-0353-234</a>
-                        </span>
-                      </div>
-                    </div>
+                    </Link>
                   </div>
                   <div className='tp-header-main-right-hamburger-btn d-xl-none offcanvas-open-btn text-end'>
                     <button

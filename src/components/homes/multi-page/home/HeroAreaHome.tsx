@@ -19,7 +19,7 @@ interface DataType {
 }
 
 const hero_content: DataType = {
-  subtitle: 'Be Invest',
+  subtitle: 'We Are Astra',
   title: <>We are The Bank of The Future</>,
   sm_des: (
     <>
@@ -76,9 +76,9 @@ const HeroAreaHomeTwo = () => {
                 >
                   <div className='tp-hero-btn mr-30'>
                     <Link className='tp-btn' href='/contact'>
-                      Create Account{' '}
+                      Download AstraPay{' '}
                       <span>
-                        <i className='fa-regular fa-plus'></i>
+                        <i className='fa-regular fa-arrow-right'></i>
                       </span>
                     </Link>
                   </div>

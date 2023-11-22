@@ -15,7 +15,7 @@ const Breadcrumb = ({ title, page_title }: DataType) => {
       >
         <div
           className='breadcrumb__bg'
-          style={{ backgroundImage: 'url(/assets/img/breadcrumb/bg.png)' }}
+          style={{ backgroundImage: 'url(/assets/img/astra-bg.png)' }}
         ></div>
         <div className='container'>
           <div className='row align-items-center'>

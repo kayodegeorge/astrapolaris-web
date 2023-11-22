@@ -51,7 +51,7 @@ const about_content: DataType = {
 const { subtitle, title, sm_des, features, job_title, avatar_name } =
   about_content
 
-const AboutAreaHomeTwo = () => {
+const AboutAreaHome = () => {
   return (
     <>
       <section
@@ -140,4 +140,4 @@ const AboutAreaHomeTwo = () => {
   )
 }
 
-export default AboutAreaHomeTwo
+export default AboutAreaHome

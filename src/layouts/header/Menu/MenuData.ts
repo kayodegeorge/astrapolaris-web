@@ -39,21 +39,19 @@ const menu_data: DataType[] = [
     link: '#',
     has_dropdown: true,
     sub_menus: [
-      { link: '/services', title: 'Services' },
-      { link: '/services-details', title: 'Services Details' },
+      { link: '/services', title: 'Loans' },
+      { link: '/services-details', title: 'Fixed Deposits' },
+      { link: '/services-details', title: 'Investments' },
     ],
   },
   {
     id: 4,
-    title: 'Our Channels',
+    title: 'E-Banking',
     link: '#',
     has_dropdown: true,
     sub_menus: [
-      { link: '/project', title: 'Project' },
-      { link: '/project-details', title: 'Project Details' },
-      { link: '/team', title: 'Team ' },
-      { link: '/team-details', title: 'Team Details' },
-      { link: '/faq', title: 'FAQ' },
+      { link: '/project', title: 'AstraPay' },
+      { link: '/project-details', title: 'SafeSave' },
     ],
   },
 

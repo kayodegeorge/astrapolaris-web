@@ -61,9 +61,12 @@ const ContactFormHome = () => {
             }}
           >
             <div className='form-input'>
-              <button type='submit' className='tp-btn'>
+              <div className='tp-hero-btn mr-30'>
                 Submit Form
-              </button>
+                <span>
+                  <i className='fa-regular fa-arrow-right'></i>
+                </span>
+              </div>
             </div>
           </div>
         </div>

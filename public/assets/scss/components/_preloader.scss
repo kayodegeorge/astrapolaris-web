@@ -1,0 +1,56 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.5 Preloader
+/*----------------------------------------*/
+
+#loading{
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 999999;
+	margin-top: 0px;
+	top: 0px;
+}
+#loading-center{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	}
+
+
+.preloader {
+    position: relative;
+  	background: url(../../img/logo/preloder.png) no-repeat center;
+	background-size: 54px;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	&::after{
+		position: absolute;
+		content: '';
+		top: 0px;
+		left: 0;
+		transform: translateX(-50px);
+		border: 2px solid #f3f3f3;
+		border-top: 2px solid #00A3C3;
+		border-radius: 50%;
+		width: 150px;
+		height: 150px;
+		animation: spin 1s ease-in-out infinite;
+	}
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+

@@ -1,0 +1,114 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.16 Search css start
+/*----------------------------------------*/
+
+.search{
+    $self : &;
+    &-area{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 272px;
+        @include transform(translateY(calc(-100% + -80px)));
+        background: var(--tp-common-white) none repeat scroll 0 0;
+        animation: 0.95s ease 0s normal forwards 1 running headerSlideDown;
+        transition: all .4s ease-in-out;
+        box-shadow: 0px 4px 10px rgba(3, 4, 28, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999;
+        
+        overflow-y: scroll;
+        overscroll-behavior-y: contain;
+        scrollbar-width: none;
+
+
+        &::-webkit-scrollbar {
+            display: none; /* for Chrome, Safari, and Opera */
+        }
+        &.search-opened{
+            @include transform(translateY(0));
+            visibility: visible;
+            opacity: 1;
+        }
+
+    }
+    &-wrapper{
+        padding: 30px;
+        min-height: 100%;
+
+        @media #{$xs}{
+           padding: 20px;
+        }
+    }
+    &-close{
+        position: absolute;
+        top: 35px;
+        right: 30px;
+
+        @media #{$xs}{
+            right: 20px;
+            top: 20px;
+        }
+        &-btn{
+            position: relative;
+            display: inline-block;
+            font-size: 16px;
+            height: 44px;
+            width: 44px;
+            border-radius: 10px;
+            line-height: 40px;
+            background-color: var(--tp-common-gray);
+            color: var(--tp-heading-primary);
+            &::after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border-radius: 10px;
+                background: var(--tp-gradient-primary);
+                opacity: 0;
+                @include transition();
+                z-index: 0;
+            }
+            & svg{
+                position: relative;
+                z-index: 2;
+                @include transition();
+                @include transform(translateY(-1px));
+            }
+            &:hover{
+                &::after{
+                    opacity: 1;
+                }
+                & svg{
+                    color: var(--tp-common-white);
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+    &-content{
+        & .search-input{
+            border-radius: 5px;
+            padding-right: 40px;
+            font-size: 16px;
+            &:focus{
+                border: 1px solid var(--tp-theme-primary);
+            }
+            &::placeholder{
+                font-size: 16px;
+            }
+        }
+    }
+    &-icon {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}

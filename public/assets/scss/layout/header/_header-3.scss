@@ -1,0 +1,186 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  3.3 Header Style 3
+/*----------------------------------------*/
+
+
+.#{$theme-prefix}-header{
+    &-area-3{}
+    &-box{
+        &-3{
+            position: relative;
+            display: flex;
+            padding-left: 50px;
+        }
+        &-main-3 {
+            width: 100%;
+          }
+    }
+    &-logo-3{
+        position: relative;
+        flex: 0 0 auto;
+        width: 228px;
+        height: 180px;
+        line-height: 180px;
+        text-align: center;
+        border-radius:0 0 5px 5px;
+        background: var(--tp-gradient-primary);
+        z-index: 1;
+    }
+    &-top{
+        &-3{
+            padding-left: 75px;
+            padding-right: 40px;
+            @media #{$xxl,$xl} {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            
+        }
+        &-info-3{
+            & ul{
+                & li{
+                    display: inline-block;
+                    list-style: none;
+                    &:not(:last-of-type){
+                        margin-right: 33px;
+                        @media #{$xxl,$xl} {
+                            margin-right: 10px;
+                        }
+                    }
+                    & a{
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: var(--tp-text-2);
+                        @media #{$xxl} {
+                            font-size: 14px;
+                        }
+                        & span{
+                            font-size: 16px;
+                            font-weight: 900;
+                            @include textGradient();
+                            margin-right: 8px;
+                        }
+                        & b{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        &-social-3{
+            background: var(--tp-gradient-primary);
+            padding: 12px 7px;
+            margin-right: 110px;
+            @media #{$x3l} {
+                margin-right: 70px;
+            }
+            @media #{$xxl} {
+                margin-right: 20px;
+            }
+            @media #{$xl} {
+                margin-right: 0;
+                padding: 12px 5px;
+            }
+            & a{
+                font-size: 16px;
+                font-weight: 400;
+                color: var(--tp-common-white);
+                padding: 10px 20px;
+                @media #{$xl} {
+                    padding: 8px 12px;
+                }
+            }
+        }
+        &-support{
+            & a{
+                position: relative;
+                font-size: 14px;
+                font-weight: 400;
+                color: var(--tp-text-2);
+                &:hover{
+                    &::before{
+                        bottom: 1px;
+                        opacity: 1;
+                    }
+                }
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: -3px;
+                    height: 1px;
+                    width: 100%;
+                    background: var(--tp-text-2);
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    &-wrapper-3{
+        padding-right: 40px;
+        margin-left: 50px;
+        background: var(--tp-common-gray);
+        @media #{$xxl,$xl} {
+            margin-left: 30px;
+            padding-right: 30px;
+        }
+        @media #{$lg,$md,$sm,$xs} {
+            margin-left: -50px;
+            padding-left: 40px;
+        }
+        @media #{$xs} {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    &-main{
+        &-right-3{
+            @media #{$lg,$md,$sm,$xs} {
+                padding-left: 90%;
+            }
+        }
+    }
+    &-contact{
+        &-inner-3 {
+            padding-right: 50px;
+            margin-right: 50px;
+            border-right: 1px solid #C0C8D2;
+            @media #{$x3l} {
+                margin-right: 40px;
+                padding-right: 40px;
+            }
+            @media #{$xxl} {
+                margin-right: 12px;
+                padding-right: 12px;
+            }
+        }
+        &-search-3{
+            & span{
+                font-weight: 900;
+                font-size: 25px;
+                color: #1F242C;
+                cursor: pointer;
+                margin-right: 40px;
+                @media #{$xxl} {
+                    margin-right: 15px;
+                }
+                @media #{$xl} {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+    &-btn-3{
+        & .tp-btn{
+            padding: 16px 58px;
+        }
+    }
+    &-icon-3{
+        font-size: 35px;
+        font-weight: 900;
+        @include textGradient();
+        margin-right: 15px;
+    }
+}

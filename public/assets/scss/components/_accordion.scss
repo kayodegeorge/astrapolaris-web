@@ -1,0 +1,170 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.12 Accordion
+/*----------------------------------------*/
+
+.#{$theme-prefix}-accordion{
+    
+    & .accordion-item{
+        border: 0;
+        background: var(--tp-common-white);
+        border-radius: 0px 0px 5px 5px;
+        margin-bottom: 20px;
+        &:first-of-type{
+            & .accordion-button{ }
+        }
+        &:last-of-type{
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+
+            & .accordion-button{
+                &.collapsed{ }
+            }
+        }
+    }
+
+    & .accordion-button {
+        color: var(--tp-heading-primary);
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -0.8px;
+        background: var(--tp-common-white);
+        border: 1px solid #E3E3E3;
+        border-radius: 5px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        padding-right: 65px;
+        @include transition();
+
+        &::after{
+            position: absolute;
+            content: "\f101";
+            font-family: var(--tp-ff-fontawesome);
+            top: 22%;
+            right: 21px;
+            @include transform(rotate(-90deg));
+            font-weight: 900;
+            font-size: 14px;
+            width: 41px;
+            height: 41px;
+            text-align: center;
+            line-height: 41px;
+            background: var(--tp-common-white);
+            border-radius: 50%;
+            color: var(--tp-heading-primary);
+            @include transition();
+        }
+
+
+        &.has-plus-icon{
+            &::after{
+                display: none;
+            }
+        }
+
+        /* plus icon css */
+        & .#{$theme-prefix}-accordion-plus{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            @include transform(translateY(-50%));
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            @extend %transition;
+
+            @include rtl{
+                right: auto;
+                left: 0;
+            }
+
+            &::after{
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 2px;
+                left: 0;
+                top: 50%;
+                @include transform(translateY(-50%));
+                background-color: #525258;
+                border-radius: 2px;
+                @extend %transition;
+
+                @include rtl{
+                    right: 0;
+                    left: auto;
+                }
+            }
+            &::before{
+                position: absolute;
+                content: "";
+                width: 2px;
+                height: 100%;
+                left: 50%;
+                top: 0;
+                background-color: #525258;
+                @include transform(translateX(-50%));
+                border-radius: 2px;
+                @extend %transition;
+
+                @include rtl{
+                    right: 50%;
+                    left: auto;
+                    @include transform(translateX(50%));
+                }
+            }
+        }
+
+        &.collapsed{ 
+            &::after{
+                width: 41px;
+                height: 41px;
+                text-align: center;
+                line-height: 41px;
+                background-image: var(--tp-gradient-primary);
+                border-radius: 50%;
+                @include transform(rotate(90deg));
+                color:  var(--tp-common-white);
+            }
+        }
+
+        &:not(.collapsed){
+            background-image: var(--tp-gradient-primary);
+            border-radius: 5px;
+            color: var(--tp-common-white);
+            box-shadow: none;
+            border: none;
+            margin-bottom: 20px;
+
+            & .#{$theme-prefix}-accordion-plus{
+                &::before{
+                    @include transform(translateX(-50%) rotate(90deg));
+                    background-color: var(--tp-theme-primary);
+
+                    @include rtl{
+                        @include transform(translateX(50%) rotate(90deg));
+                    }
+                }
+                &::after{
+                    background-color: var(--tp-theme-primary);
+                }
+            }
+        }
+
+        &:focus{
+            box-shadow: none;
+            border: 0;
+        }
+    }
+
+    & .accordion-body{
+        padding: 0 52px 2px 20px;
+        @media #{$xs} {
+            padding: 0 20px 2px 20px;
+        }
+        & p{
+            color: #67687A;
+        }
+    }
+}

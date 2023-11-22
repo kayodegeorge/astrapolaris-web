@@ -1,0 +1,219 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.3 Footer Style 3
+/*----------------------------------------*/
+
+//footer widget style
+.#{$theme-prefix}-footer{
+    &-area-3{
+        overflow: hidden;
+        @media #{$xs} {
+            padding-top: 90px;
+        }
+    }
+    &-bg-shape-3{
+        & .shape-1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        & .shape-2{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+    &-subscribe{
+        &-wrapper{
+            background: var(--tp-gradient-primary);
+            border-radius: 5px;
+            padding: 40px 60px;
+            @media #{$xs} {
+                padding: 20px;
+            }
+        }
+        &-wrapper-title{
+            & span{
+                margin-right: 20px;
+            }
+            @media #{$md,$sm,$xs} {
+                margin-bottom: 30px;
+            }
+        }
+        &-title{
+            font-weight: 500;
+            font-size: 20px;
+            letter-spacing: -0.8px;
+            margin: 0;
+            color: var(--tp-common-white);
+            & br{
+                @media #{$lg,$md,$sm,$xs} {
+                    display: none;
+                }
+            }
+        }
+        &-email{
+            position: relative;
+            @media #{$md,$sm,$xs} {
+                margin-bottom: 30px;
+            }
+            & input{
+                width: 300px;
+                border: none;
+                background: none;
+                border-radius: 0;
+                border-bottom: 1px solid #E3E3E3;
+                @media #{$lg,$md,$sm,$xs} {
+                    width: 100%;
+                }
+                &::placeholder{
+                    font-family: var(--tp-ff-p);
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: var(--tp-common-white);
+                }
+                &:focus{
+                    font-size: 16px;
+                    font-weight: 400;
+                    box-shadow: none;
+                    border-bottom: 1px solid #E3E3E3;
+                    color: var(--tp-common-white);
+                }
+            }
+            & span{
+                position: absolute;
+                top: 15px;
+                left: 0;
+                font-size: 16px;
+                color: var(--tp-common-white);
+                & i{
+                    font-weight: 400;
+                }
+            }
+        }
+        &-btn{
+            & button{
+                font-size: 16px;
+                font-weight: 600;
+                font-family: var(--tp-ff-heading);
+                color: var(--tp-heading-primary);
+                background: var(--tp-common-white);
+                display: inline-block;
+                border-radius: 45px;
+                padding: 13px 55px;
+                @media #{$lg} {
+                    padding: 14px 35px;
+                }
+            }
+        }
+    }
+    &-info{
+        &-call{
+            margin-bottom: 15px;
+        }
+        &-call,
+        &-mail{
+            & a{
+                font-family: var(--tp-ff-p);
+                font-weight: 400;
+                font-size: 16px;
+                color: var(--tp-common-white);
+                &:hover{
+                    color: var(--tp-theme-primary);
+                }
+                & i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* footer col design for home 3 */
+.tp-footer-3-col{
+    &-1{
+        
+    }
+    &-2{
+        padding-left: 110px;
+        @media #{$xl} {
+            padding-left:85px ;
+        }
+        @media #{$lg} {
+            padding-left: 95px;
+        }
+        @media #{$md,$sm,$xs} {
+            padding-left: 0;
+        }
+        & .tp-footer-widget-content{
+            &  ul {
+                & li{
+                    margin-left: 25px;
+                    & a{
+                        &:hover{
+                            & i{
+                                animation: tfLeftToRight 0.5s forwards;
+                            }
+                        }
+                        & i{
+                            position: absolute;
+                            top: 5px;
+                            left: -23px;
+                            @include textGradient();
+                            font-size: 16px;
+                            font-weight: 900;
+                        }
+                    }
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+    &-3{
+        padding-left: 45px;
+        @media #{$md,$sm,$xs} {
+            padding-left: 0;
+        }
+        & .tp-footer-widget-content{
+            &  ul {
+                & li{
+                    margin-left: 25px;
+                    & a{
+                        &:hover{
+                            & i{
+                                animation: tfLeftToRight 0.5s forwards;
+                            }
+                        }
+                        & i{
+                            position: absolute;
+                            top: 5px;
+                            left: -23px;
+                            @include textGradient();
+                            font-size: 16px;
+                            font-weight: 900;
+                        }
+                    }
+                    &::after{
+                        content: none;
+                    }
+                }
+            }
+        }
+    }
+    &-4{
+        & .tp-footer-widget-item {
+            & span {
+                & i{
+                    @include textGradient();
+                }
+            }
+        }
+    }
+}

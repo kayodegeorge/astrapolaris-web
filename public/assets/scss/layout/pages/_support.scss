@@ -1,0 +1,163 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  8.2 support css
+/*----------------------------------------*/
+
+.#{$theme-prefix}-support{
+    $self : &;
+    &-area{}
+    &-bg{
+        &::before{
+            position: absolute;
+            content: "";
+            height: 47%;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background: var(--tp-theme-secondary);
+            z-index: -1;
+        }
+    }
+    &-wrapper{
+        position: relative;
+        border-radius: 5px;
+        padding: 80px 60px;
+        z-index: 1;
+        background: var(--tp-common-gray);
+        @media #{$xs} {
+            padding: 20px;
+        }
+    }
+    &-thumb{
+        @media #{$xs} {
+            flex-wrap: wrap;
+        }
+        & .main{
+            border-radius: 5px;
+            padding-right: 40px;
+            @media #{$lg,$md,$sm,$xs} {
+                padding-right: 0;
+            }
+            @media #{$xs} {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+        & .shape-1 {
+            position: absolute;
+            top: 12%;
+            left: 17%;
+            @media #{$lg} {
+                left: 0;
+            }
+            @media #{$md} {
+                right: 15%;
+            }
+            @media #{$sm} {
+                left: 5%;
+            }
+            @media #{$xs} {
+                left: 0;
+            }
+        }
+        & .shape-2 {
+            position: absolute;
+            top: 14%;
+            right: 6%;
+        }
+        & p{
+            margin-bottom: 5px;
+        }
+        & p,
+        & span{
+            font-family: var(--tp-ff-heading);
+            font-weight: 600;
+            font-size: 24px;
+            letter-spacing: -0.96px;
+            color: var(--tp-heading-primary);
+        }
+    }
+    &-count{
+        position: absolute;
+        bottom: -120px;
+        left: 0;
+        border-radius: 5px;
+        background: var(--tp-common-white);
+        box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.07);
+        & .counter-border{
+            position: relative;
+            padding: 50px 34px;
+            @media #{$sm} {
+                padding: 35px 15px;
+            }
+            &::before{
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                height: 6px;
+                width: 100%;
+                background: var(--tp-gradient-primary);
+            }
+        }
+        @media #{$lg} {
+            left: 10px;
+            bottom: -48%;
+        }
+        @media #{$md,$sm} {
+            left: -45px;
+            bottom: 0;
+        }
+        @media #{$xs} {
+           position: static;
+        }
+        & .circular {
+            margin-bottom: 10px;
+            & .knob{
+                color: var(--tp-heading-primary) !important;
+            }
+        }
+    }
+    &-wrapper{
+        &-inner{
+            padding-top: 45px;
+            & p{
+                margin-bottom: 30px;
+                color: var(--tp-text-1);
+            }
+            & ul{
+                margin-bottom: 42px;
+                & li{
+                    position: relative;
+                    font-family: var(--tp-ff-p);
+                    list-style: none;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: var(--tp-text-1);
+                    padding-left: 40px;
+                    margin-bottom: 30px;
+                    & i{
+                        position: absolute;
+                        left: 0;
+                        top: 15px;
+                        font-size: 12px;
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 20px;
+                        background: var(--tp-gradient-primary);
+                        color: var(--tp-common-white);
+                    }
+                }
+            }
+        }
+    }
+    &-btn{
+        line-height: 1;
+        & .tp-btn{
+            padding: 23px 53px;
+        }
+    }
+}

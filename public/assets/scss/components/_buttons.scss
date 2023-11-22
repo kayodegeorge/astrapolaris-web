@@ -1,0 +1,135 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.3 Buttons
+/*----------------------------------------*/
+
+.#{$theme-prefix}-btn{
+	display: inline-block;
+	font-family: var(--tp-ff-heading);
+	font-weight: 600;
+	font-size: 16px;
+	background-image: var(--tp-gradient-primary);
+	color: var(--tp-common-white);
+	padding: 16px 44px;
+	border-radius: 45px;
+	transition: all 0.4s ease-in;
+	background-size: 200% auto;
+  	overflow: hidden;
+	& svg{
+		@extend %svg-2;
+	}
+	& i{
+		transform: translateY(1px);
+		margin-left: 6px;
+	}
+
+	&:hover{
+		color: var(--tp-common-white);
+		background-position: right center;
+	}
+
+}
+
+/* hamburger btn */
+
+.#{$theme-prefix}-hamburger-btn{
+	height: 16px;
+	width: 22px;
+	line-height: 16px;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	& span{
+		background: var(--tp-common-black);
+		border-radius: 3px;
+		content: '';
+		position: absolute;
+		width: 22px;
+		height: 2px;         
+		left: 0;
+		-webkit-transition: .3s ease-in-out;
+		-moz-transition: .3s ease-in-out;
+		-o-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		&::before,
+		&::after{
+			background: var(--tp-common-black);
+			border-radius: 3px;
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 2px;         
+			margin-top: 13px; 
+			left: 0;
+			-webkit-transition: .3s ease-in-out;
+			-moz-transition: .3s ease-in-out;
+			-o-transition: .3s ease-in-out;
+			transition: .3s ease-in-out;
+		}
+		&::before{
+			margin-top:-7px;
+		}
+		&::after{
+			margin-top: 7px;
+			width: 13px;
+		}
+	}
+	&.active{
+		& span{
+			background: transparent;
+
+			&::before{
+				margin-top: 0;
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);
+			}
+			&::after{
+				margin-top: 0;
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
+		}
+	}
+	&-white{
+		& span{
+			background-color: var(--tp-common-white);
+
+			&::after,
+			&::before{
+				background-color: var(--tp-common-white);
+			}
+		}
+	}
+}
+
+
+.play-btn{
+	position: relative;
+	height: 103px;
+	width: 103px;
+	line-height: 103px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50%;
+	font-size: 32px;
+	font-weight: 900;
+	z-index: 1;
+	color: var(--tp-text-1);
+	background: var(--tp-common-white);
+	@include transition();
+
+	@media #{$md,$sm,$xs} {
+		height: 90px;
+		width: 90px;
+		line-height: 90px;
+		font-size: 25px;
+	}
+	&:hover{
+		transform: scale(1.05);
+	}
+}

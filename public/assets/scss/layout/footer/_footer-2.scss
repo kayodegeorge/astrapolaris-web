@@ -1,0 +1,115 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.2 Footer Style 2
+/*----------------------------------------*/
+
+//footer widget style
+.#{$theme-prefix}-footer{
+    &-area-2{}
+    &-bg-shape-2{
+        & .shape-1{
+            position: absolute;
+            top: 0px;
+            left: 0;
+            z-index: -1;            
+        }
+        & .shape-2{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+    &-content{
+        &-email{
+            position: relative;
+            & input{
+                height: 60px;
+                font-size: 16px;
+                font-weight: 400;
+                padding-left: 20px;
+                padding-right: 60px;
+                border-radius: 5px;
+                &:focus{
+                    border: 1px solid #00accc;
+                }
+                &::placeholder{
+                    font-weight: 400;
+                    font-size: 16px;
+                    padding-left: 20px;
+                    font-weight: 400;
+                }
+             }
+             & span {
+                position: absolute;
+                top: 9px;
+                right: 10px;
+                height: 42px;
+                width: 46px;
+                line-height: 42px;
+                text-align: center;
+                background: var(--tp-gradient-primary);
+                font-weight: 900;
+                font-size: 14px;
+                border-radius: 5px;
+                color: var(--tp-common-white);
+              }
+        }
+    }
+}
+
+
+
+/* footer col design for home 2 */
+.tp-footer-2-col{
+    &-1{
+        padding-right: 22px;
+        & .tp-footer-widget-social {
+            & a{
+                font-size: 16px;
+            }
+        }
+    }
+    &-2{
+        padding-left: 16px;
+        @media #{$lg,$sm,$xs} {
+            padding-left: 0;
+        }
+        & .tp-footer-widget-content{
+            &  ul {
+                & li{
+                    margin-left: 0;
+                    &::after{
+                        content: none;
+                    }
+                    & a{
+                        color: #F6F6F9;
+                    }
+                }
+            }
+        }
+    }
+    &-3{
+        padding-left: 67px;
+        @media #{$xl} {
+            padding-left: 45px;
+        }
+        @media #{$lg,$md,$sm,$xs} {
+            padding-left: 0;
+        }
+        & .tp-footer-widget-item {
+            &-title{
+                color: #E3E3E3
+            }
+            & span {
+                & i{
+                    @include textGradient();
+                }
+            }
+        }
+    }
+    &-4{
+
+    }
+}

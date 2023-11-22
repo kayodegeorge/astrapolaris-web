@@ -1,0 +1,26 @@
+
+// font url
+
+$font-url: 'https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&family=Kumbh+Sans:wght@400;500;600;700;800&display=swap';
+
+
+// font family
+$font-family: (
+    'ff': (
+        'body': "'Jost', sans-serif",
+        'heading': "'Jost', sans-serif",
+        'p': "'Kumbh Sans', sans-serif",
+        'fontawesome': '"Font Awesome 6 Pro"',
+    )
+);
+
+// font size
+$font-size: (
+    'fz': (
+        'body': 14px,
+        'p': 16px,
+    )
+);
+
+
+

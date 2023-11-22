@@ -1,0 +1,4 @@
+sass --watch D:\Dropbox\pranto\finbest\assets\scss\main.scss:D:\Dropbox\pranto\finbest\assets\css\main.css
+
+
+sass --watch C:\Users\mdpra\Dropbox\pranto\finbest-prev\assets\scss\main.scss:C:\Users\mdpra\Dropbox\pranto\finbest-prev\assets\css\main.css

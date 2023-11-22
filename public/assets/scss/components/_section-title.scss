@@ -1,0 +1,56 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.15 Section Title
+/*----------------------------------------*/
+
+.#{$theme-prefix}-section{
+    &-title-pre{
+        font-family: var(--tp-ff-heading);
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        @include textGradient();
+        display: inline-block;
+        margin-bottom: 10px;
+
+        &-bg{
+            @extend %ff-abril;
+            position: absolute;
+            top: -75px;
+            left: -65px;
+            font-size: 160px;
+            line-height: .88;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            -webkit-text-stroke-color: rgba($color: $white, $alpha: .05);
+            -webkit-text-stroke-width: 2px;
+            -moz-text-stroke-color:  rgba($color: $white, $alpha: .05);
+            -moz-text-stroke-width: 2px;
+            -moz-text-fill-color: transparent;
+            display: inline-block;
+        }
+    }
+    &-title{
+        font-weight: 600;
+        font-size: 48px;
+        letter-spacing: -1.92px;
+        color: var(--tp-heading-primary);
+        line-height: 1.2;
+        margin-bottom: 20px;
+
+        & br{
+            @media #{$sm,$xs} {
+                display: none;   
+            }
+        }
+        @media #{$sm} {
+            font-size: 42px;
+        }
+        @media #{$xs} {
+            font-size: 34px;
+        }
+
+    }
+}

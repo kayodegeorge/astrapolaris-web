@@ -1,0 +1,27 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  3.2 Header Style 2
+/*----------------------------------------*/
+
+
+.#{$theme-prefix}-header{
+    &-space{
+        &-2{
+            padding-left: 90px;
+            padding-right: 90px;
+            @media #{$sm} {
+                padding-right: 45px;
+                padding-left: 45px;
+            }
+            @media #{$xs} {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+        }
+    }
+    &-contact-2{
+        @media #{$lg,$md,$sm,$xs} {
+            padding-left: 90%;
+        }
+    }
+}

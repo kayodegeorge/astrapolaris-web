@@ -1,0 +1,32 @@
+$colors: (
+    'common': (
+        'white': #ffffff,
+        'black': #000,
+        'gray': #F4F5FA,
+    ),
+    'theme': (
+        'primary': #00A3C3,
+        'secondary': #16243E,
+    ),
+    'gradient':(
+        'primary': linear-gradient(90deg, #004D6E 0%, #00ACCC 100%),
+    ),
+    'heading': (
+        'primary': #16243E,
+        'secondary': #16243E,
+    ),
+    'text': (
+        'body':#333F4D,
+        '1':#67687A,
+        '2':#757474,
+    ),
+    'border': (
+        'primary': #EAEBED,
+        'secondary': #F0F2F4,
+    )
+);
+
+$white : #fff;
+$black : #020B18;
+$theme-primary : #0989FF;
+$border-primary : #EAEBED;

@@ -1,0 +1,39 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.3 Brand css
+/*----------------------------------------*/
+
+.#{$theme-prefix}-brand{
+    &-area{}
+    &-background{
+        &:before {
+            position: absolute;
+            content: "";
+            height: 34%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #f6f6f9;
+            z-index: -1;
+          }
+    }
+    &-wrapper{
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        padding: 80px 103px;
+        @media #{$lg} {
+            padding: 70px 40px;
+        }
+        @media #{$md,$sm,$xs} {
+            padding: 40px;
+        }
+    }
+    &-thumb{
+        @media #{$md,$sm,$xs} {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+}

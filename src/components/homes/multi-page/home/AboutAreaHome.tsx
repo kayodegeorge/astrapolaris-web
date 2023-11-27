@@ -80,7 +80,7 @@ const AboutAreaHome = () => {
                   alt='image-title-here'
                 />
 
-                <div className='tp-about-progressbar'>
+                {/* <div className='tp-about-progressbar'>
                   <div
                     className='circular tl-progress mx-auto'
                     style={{ width: '100px' }}
@@ -98,7 +98,7 @@ const AboutAreaHome = () => {
                     />
                   </div>
                   <h3>Daily Activity</h3>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className='col-lg-6'>

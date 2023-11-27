@@ -109,7 +109,8 @@ const ProjectAreaHome = () => {
                 </div>
                 <div className='tp-process-trusted text-center'>
                   <p>
-                    Trusted By <br /> <span>2345</span>
+                    Trusted By <br />{' '}
+                    <span style={{ fontSize: '30px' }}>customers</span>
                   </p>
                 </div>
               </div>

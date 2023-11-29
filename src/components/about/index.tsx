@@ -7,6 +7,8 @@ import Footer from '@/layouts/footer/Footer'
 import Breadcrumb from '../common/BreadCrumb'
 import AboutAreaHome from '../homes/multi-page/home/AboutAreaHome'
 import ProjectAreaHome from '../homes/multi-page/home/ProjectAreaHome'
+import TeamAreaHome from '../homes/multi-page/home/BoardAreaHome'
+import ManagementTeamAreaHome from '../homes/multi-page/home/ManagementTeamAreaHome'
 
 const About = () => {
   return (
@@ -15,9 +17,10 @@ const About = () => {
       <main>
         <Breadcrumb title='About Us' page_title='About Us' />
         <AboutAreaHome />
-        {/* <ProcessAreaHomeOne />
-        <TeamAreaHomeOne style={true} /> */}
+
         <ProjectAreaHome />
+        <TeamAreaHome style={true} />
+        <ManagementTeamAreaHome />
         <CtaAreaHome />
       </main>
       <Footer />

@@ -40,7 +40,7 @@ const about_content: DataType = {
     {
       id: 2,
       img: about_icon_2,
-      title: 'Fixed deposit',
+      title: 'Deposits',
       sm_des: 'Payment solutions enable to stand  to accept',
     },
   ],

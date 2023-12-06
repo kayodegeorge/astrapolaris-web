@@ -4,7 +4,7 @@ import UseSticky from '@/hooks/UseSticky'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import HeaderLogo from '../../../public/assets/img/logo/astra-logo.svg'
+import HeaderLogo from '../../../public/assets/img/logo/astra-blue.png'
 import NavMenu from './Menu/NavMenu'
 import OnPageMenu from './Menu/OnePageMenu'
 import Offcanvas from './Menu/OffCanvas'
@@ -52,7 +52,7 @@ const Header = ({ onePageHomeOne }: any) => {
                 <div className='tp-header-main-right-2 d-flex align-items-center justify-content-xl-end'>
                   <div className='tp-hero-btn mr-30'>
                     <Link className='tp-btn' href='/contact'>
-                      Download Our App{' '}
+                      Online Banking
                       <span>
                         <i className='fa-regular fa-arrow-right'></i>
                       </span>

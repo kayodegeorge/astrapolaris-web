@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import footer_logo from '../../../public/assets/img/logo/astra-logo.svg'
+import footer_logo from '../../../public/assets/img/logo/astra-blue.png'
 import SocialLinks, { CopyRight } from '@/components/common/SocialLinks'
 
 interface Datatype {
@@ -78,7 +78,7 @@ const Footer = () => {
     <>
       <footer
         className='tp-footer-area-2 pt-140 p-relative z-index-1'
-        style={{ backgroundColor: '#1D04D5' }}
+        style={{ backgroundColor: '#16243E' }}
       >
         <div className='tp-footer-main-area tp-footer-border'>
           <div className='container'>

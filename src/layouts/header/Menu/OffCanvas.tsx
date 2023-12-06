@@ -63,7 +63,7 @@ const Offcanvas = ({ menuOpen, setMenuOpen, onePageHomeOne }: any) => {
                 </div>
                 <div className='offcanvas__contact-content-content'>
                   <a href='https://www.google.com/maps/search/86+Road+Broklyn+Street,+600+New+York,+USA/@40.6897806,-74.0278086,12z/data=!3m1!4b1'>
-                    86 Road Broklyn Street, 600{' '}
+                    Astra Polaris Building, Onikolobo, Abeokuta, Ogun State.
                   </a>
                 </div>
               </div>
@@ -73,8 +73,7 @@ const Offcanvas = ({ menuOpen, setMenuOpen, onePageHomeOne }: any) => {
                 </div>
                 <div className='offcanvas__contact-content-content'>
                   <a href='mailto:needhelp@company.com'>
-                    {' '}
-                    Needhelp@company.com{' '}
+                    info@astrapolaris.com
                   </a>
                 </div>
               </div>
@@ -83,7 +82,7 @@ const Offcanvas = ({ menuOpen, setMenuOpen, onePageHomeOne }: any) => {
                   <i className='fa-solid fa-phone'></i>
                 </div>
                 <div className='offcanvas__contact-content-content'>
-                  <a href='tel:01310-069824'> +92 666 888 0000</a>
+                  <a href='tel:01310-069824'> +234 902 0353 234</a>
                 </div>
               </div>
             </div>

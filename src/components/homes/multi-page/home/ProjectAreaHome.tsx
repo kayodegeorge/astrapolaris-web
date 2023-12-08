@@ -18,7 +18,7 @@ interface DataType {
 }
 
 const process_counter: DataType = {
-  subtitle: 'Our Latest Project',
+  subtitle: 'Our Latest Product',
   title: <>Introducing SafeSave</>,
   features: [
     {

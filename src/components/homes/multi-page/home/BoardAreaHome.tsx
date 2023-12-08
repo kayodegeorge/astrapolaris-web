@@ -1,5 +1,6 @@
 import { TeamSocialLinks } from '@/components/common/SocialLinks'
-import team_data from '@/data/TeamData'
+import board_data from '@/data/BoardData'
+import team_data from '@/data/ManagementTeamData'
 import { Bona_Nova } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -27,7 +28,7 @@ const BoardAreaHome = ({ style }: any) => {
             </div>
           </div>
           <div className='row'>
-            {team_data.slice(0, 4).map((item, index) => (
+            {board_data.slice(0, 4).map((item, index) => (
               <>
                 {item.home === 1 && (
                   <div key={index} className='col-lg-3 col-md-6'>

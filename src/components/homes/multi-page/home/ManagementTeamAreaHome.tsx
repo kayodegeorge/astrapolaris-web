@@ -1,4 +1,4 @@
-import team_data from '@/data/TeamData'
+import team_data from '@/data/ManagementTeamData'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'

@@ -25,13 +25,17 @@ const menu_data: DataType[] = [
     id: 1,
     title: 'Home',
     link: '#',
-    img_dropdown: true,
   },
   {
     id: 2,
     title: 'About Us',
     link: '/about',
-    has_dropdown: false,
+    has_dropdown: true,
+    sub_menus: [
+      { link: '/about', title: 'Our Heritage' },
+      { link: '/about', title: ' Our Board' },
+      { link: '/about', title: 'Our Management' },
+    ],
   },
   {
     id: 3,

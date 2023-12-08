@@ -9,7 +9,7 @@ import team_hr from '../../public/assets/img/team/team-hr.jpg'
 import team_admin from '../../public/assets/img/team/team-admin.jpg'
 import team_derin from '../../public/assets/img/team/team-derin.jpg'
 import team_icu from '../../public/assets/img/team/team-icu.jpg'
-import team_kolbdm from '../../public/assets/img/team/team-kolbdm.jpg'
+import team_id from '../../public/assets/img/team/id-cfo.jpg'
 import team_azeez from '../../public/assets/img/team/team-azeez.jpg'
 import team_avatar_img_2 from '../../public/assets/img/team/img-2.jpg'
 import team_avatar_img_3 from '../../public/assets/img/team/img-3.jpg'
@@ -92,7 +92,7 @@ const team_data: DataType[] = [
     id: 3,
     home: 1,
     delay: '.7s',
-    img: team_kolbdm,
+    img: team_id,
     title: 'Idowu Falade',
     designatio: 'Chief Financial Officer',
   },

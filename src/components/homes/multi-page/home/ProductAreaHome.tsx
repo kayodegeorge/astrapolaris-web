@@ -3,8 +3,6 @@ import process_icon_1 from '../../../../../public/assets/img/process/icon-1.svg'
 import process_icon_2 from '../../../../../public/assets/img/process/icon-2.svg'
 import process_icon_3 from '../../../../../public/assets/img/process/icon-3.svg'
 
-import process_img_1 from '../../../../../public/assets/img/process/img-1.jpg'
-import process_img_2 from '../../../../../public/assets/img/process/img-2.jpg'
 import Image from 'next/image'
 
 interface DataType {
@@ -67,7 +65,12 @@ const ProjectAreaHome = () => {
                   >
                     <div className='tp-process-item-icon'>
                       <span>
-                        <Image src={item.img} alt='image-title-here' />
+                        <Image
+                          width={200}
+                          height={200}
+                          src='/assets/img/process/icon-1.svg'
+                          alt='image-title-here'
+                        />
                       </span>
                     </div>
                     <div className='tp-process-item-content'>
@@ -86,11 +89,18 @@ const ProjectAreaHome = () => {
               >
                 <div className='tp-process-thumb p-relative'>
                   <div className='main'>
-                    <Image src={process_img_1} alt='image-title-here' />
+                    <Image
+                      width={400}
+                      height={300}
+                      src='/assets/img/process/img-1.jpg'
+                      alt='image-title-here'
+                    />
                   </div>
                   <Image
                     className='shape-1'
-                    src={process_img_2}
+                    width={400}
+                    height={300}
+                    src='/assets/img/process/img-2.jpg'
                     alt='image-title-here'
                   />
                 </div>

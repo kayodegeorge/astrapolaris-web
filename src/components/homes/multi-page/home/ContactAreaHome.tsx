@@ -1,7 +1,7 @@
 'use client'
 
 import ContactFormHome from '@/components/forms/ContactFormHome'
-import counter_img from '../../../../../public/assets/img/contact/contact-1.jpg'
+
 import Image from 'next/image'
 
 const ContactAreaHome = () => {
@@ -30,7 +30,12 @@ const ContactAreaHome = () => {
                 data-wow-duration='1s'
                 data-wow-delay='.3s'
               >
-                <Image src={counter_img} alt='image-title-here' />
+                <Image
+                  src='/assets/img/contact/contact-1.jpg'
+                  width={600}
+                  height={400}
+                  alt='image-title-here'
+                />
               </div>
             </div>
           </div>

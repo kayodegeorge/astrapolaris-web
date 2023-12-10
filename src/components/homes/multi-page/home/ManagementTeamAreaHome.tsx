@@ -30,6 +30,8 @@ const ManagementTeamAreaHome = () => {
                   <div className='tp-team-item-thumb'>
                     <Link href='/team-details'>
                       <Image
+                        width={200}
+                        height={200}
                         src={item.img}
                         style={{ width: '100%', height: 'auto' }}
                         alt='image-title-here'

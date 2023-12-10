@@ -2,15 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import hero_shape_1 from '../../../../../public/assets/img/hero/home-2/shape-3.png'
-import hero_shape_2 from '../../../../../public/assets/img/hero/home-2/shape-1.png'
-import hero_shape_3 from '../../../../../public/assets/img/hero/home-2/shape-2.png'
-import hero_shape_4 from '../../../../../public/assets/img/hero/home-2/shape-4.png'
-
-import hero_img_1 from '../../../../../public/assets/img/hero/home-2/img-1.jpg'
-import hero_img_2 from '../../../../../public/assets/img/hero/home-2/img-2.jpg'
-import astra_lady from '../../../../../public/assets/img/hero/astra-lady.png'
-
 interface DataType {
   subtitle: string
   title: React.JSX.Element
@@ -40,7 +31,12 @@ const HeroAreaHomeTwo = () => {
         style={{ backgroundColor: '#F4F5FA' }}
       >
         <div className='tp-hero-bg-2'>
-          <Image src={hero_shape_1} alt='image-title-here' />
+          <Image
+            width={200}
+            height={200}
+            src='/assets/img/hero/home-2/shape-3.png'
+            alt='image-title-here'
+          />
         </div>
         <div className='container'>
           <div className='row'>
@@ -103,24 +99,43 @@ const HeroAreaHomeTwo = () => {
                 data-wow-delay='.3s'
               >
                 <div className='tp-hero-img-1'>
-                  <Image src={hero_img_1} alt='image-title-here' />
+                  <Image
+                    width={200}
+                    height={200}
+                    src='/assets/img/hero/home-2/shape-2.png'
+                    alt='image-title-here'
+                  />
                 </div>
                 <div className='tp-hero-img-2'>
-                  <Image src={astra_lady} alt='image-title-here' />
+                  <Image
+                    width={300}
+                    height={200}
+                    src='/assets/img/hero/astra-lady.png'
+                    alt='image-title-here'
+                  />
                 </div>
                 <div className='tp-hero-shape-2'>
                   <Image
+                    width={100}
+                    height={100}
                     className='shape-1'
-                    src={hero_shape_2}
+                    src='/assets/img/hero/home-2/shape-3.png'
                     alt='image-title-here'
                   />
                   <Image
+                    width={100}
+                    height={100}
                     className='shape-2'
-                    src={hero_shape_3}
+                    src='/assets/img/hero/home-2/shape-3.png'
                     alt='image-title-here'
                   />
                   <div className='shape-3'>
-                    <Image src={hero_shape_4} alt='image-title-here' />
+                    <Image
+                      width={100}
+                      height={100}
+                      src='/assets/img/hero/home-2/shape-4.png'
+                      alt='image-title-here'
+                    />
                   </div>
                 </div>
               </div>

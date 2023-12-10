@@ -4,7 +4,7 @@ import UseSticky from '@/hooks/UseSticky'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
-import HeaderLogo from '../../../public/assets/img/logo/astra-blue.png'
+
 import NavMenu from './Menu/NavMenu'
 import OnPageMenu from './Menu/OnePageMenu'
 import Offcanvas from './Menu/OffCanvas'
@@ -32,7 +32,7 @@ const Header = ({ onePageHomeOne }: any) => {
                     <Image
                       width={200}
                       height={200}
-                      src={HeaderLogo}
+                      src='/assets/img/logo/astra-blue.png'
                       alt='image-title-here'
                     />
                   </Link>

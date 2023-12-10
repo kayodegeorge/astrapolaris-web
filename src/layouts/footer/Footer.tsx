@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import footer_logo from '../../../public/assets/img/logo/astra-blue.png'
+
 import SocialLinks, { CopyRight } from '@/components/common/SocialLinks'
 
 interface Datatype {
@@ -90,7 +90,7 @@ const Footer = () => {
                       <Image
                         width={300}
                         height={300}
-                        src={footer_logo}
+                        src='/assets/img/logo/astra-blue.png'
                         alt='image-title-here'
                       />
                     </Link>

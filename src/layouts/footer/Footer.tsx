@@ -54,13 +54,7 @@ const footer_content: Datatype = {
   ],
   news_text: 'Newsletter',
   news_title: "It's important for businesses to carefully consider their pay.",
-  footer_links: [
-    'About us',
-    'Categories',
-    'Services',
-    'Blog Grid',
-    'Contact Us',
-  ],
+  footer_links: ['About us', 'Services', 'Contact Us'],
 }
 const {
   sm_info,
@@ -90,7 +84,7 @@ const Footer = () => {
                       <Image
                         width={300}
                         height={300}
-                        src='/assets/img/logo/astra-blue.png'
+                        src='/assets/img/logo/astra-white-removebg.png'
                         alt='image-title-here'
                       />
                     </Link>

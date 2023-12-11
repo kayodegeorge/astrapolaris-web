@@ -3,7 +3,7 @@ import Wrapper from '@/layouts/Wrapper'
 import React from 'react'
 
 export const metadata = {
-  title: 'Main Home - Finbest - Banking and Finance React Next js Template',
+  title: ' Home - Astra-Polaris Microfinance Bank',
 }
 
 const index = () => {

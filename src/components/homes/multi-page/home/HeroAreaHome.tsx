@@ -108,8 +108,8 @@ const HeroAreaHomeTwo = () => {
                 </div>
                 <div className='tp-hero-img-2'>
                   <Image
-                    width={300}
-                    height={200}
+                    width={400}
+                    height={300}
                     src='/assets/img/hero/astra-lady.png'
                     alt='image-title-here'
                   />
@@ -131,9 +131,9 @@ const HeroAreaHomeTwo = () => {
                   />
                   <div className='shape-3'>
                     <Image
-                      width={100}
-                      height={100}
-                      src='/assets/img/hero/home-2/shape-4.png'
+                      width={140}
+                      height={140}
+                      src='/assets/img/hero/home-2/30-shrink.png'
                       alt='image-title-here'
                     />
                   </div>

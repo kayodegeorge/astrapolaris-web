@@ -27,7 +27,7 @@ const team_data: DataType[] = [
     delay: '.7s',
     img: '/assets/img/team/team-wole.jpg',
     title: 'Oluwole Idowu',
-    designatio: 'CRO',
+    designatio: 'Chief Risk Officer',
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const team_data: DataType[] = [
     delay: '.9s',
     img: '/assets/img/team/team-cto.jpg',
     title: 'Adesina Akomolafe',
-    designatio: 'CTO',
+    designatio: 'Chief Technology Officer',
   },
   {
     id: 2,
@@ -60,7 +60,7 @@ const team_data: DataType[] = [
     delay: '.3s',
     img: '/assets/img/team/team-icu.jpg',
     title: 'Samson Omoyemi',
-    designatio: 'Head, ICU',
+    designatio: 'Head, Internal Audit and Control',
   },
   {
     id: 2,
@@ -74,7 +74,7 @@ const team_data: DataType[] = [
     id: 3,
     home: 1,
     delay: '.7s',
-    img: '/assets/img/team/team-cfo.jpg',
+    img: '/assets/img/team/id-cfo.jpg',
     title: 'Idowu Falade',
     designatio: 'Chief Financial Officer',
   },

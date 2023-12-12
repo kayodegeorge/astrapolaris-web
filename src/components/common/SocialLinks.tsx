@@ -18,14 +18,14 @@ const social_links: social_links_type[] = [
     icon: 'fab fa-twitter',
   },
   {
-    link: 'https://www.linkedin.com',
+    link: 'https://www.instagram.com',
     target: '_blank',
-    icon: 'fab fa-linkedin-in',
+    icon: 'fab fa-instagram',
   },
   {
-    link: 'https://www.vimeo.com',
+    link: 'https://www.youtube.com',
     target: '_blank',
-    icon: 'fab fa-vimeo-v',
+    icon: 'fab fa-youtube',
   },
 ]
 
@@ -113,7 +113,7 @@ const team_social_data: DataType[] = [
   },
   {
     id: 4,
-    link: 'http://linkedin.com',
+    link: 'http://youtube.com',
     icon: 'fa-brands fa-linkedin-in',
   },
 ]

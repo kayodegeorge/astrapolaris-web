@@ -21,21 +21,21 @@ const process_counter: DataType = {
   features: [
     {
       img: process_icon_1,
-      title: 'Best emplementation',
+      title: 'Automate Your Savings',
       sm_des:
-        'Ished fact that a reader will be distrol acted bioiiy desig the.ished fact that a reader will be distrol acted bioiiy bioiiy desig the.ished fact that a reader.',
+        'Safesave enables intelligent automation of your savings, eliminating the need to manually remember and execute regular fixed daily or weekly contributions.',
     },
     {
       img: process_icon_2,
-      title: 'Design make for you',
+      title: 'Easy Onboarding',
       sm_des:
-        'Ished fact that a reader will be distrol acted bioiiy desig the.ished fact that a reader will be distrol acted bioiiy bioiiy desig the.ished fact that a reader.',
+        'Getting started with the SafeSave app is as easy as pie. Simply download the app from the PlayStore or AppStore, enter your BVN, and you will be up and running in no time!',
     },
     {
       img: process_icon_3,
-      title: 'Finished the process',
+      title: ' Competitive Interests Rates',
       sm_des:
-        'Ished fact that a reader will be distrol acted bioiiy desig the.ished fact that a reader will be distrol acted bioiiy bioiiy desig the.ished fact that a reader.',
+        'Explore dynamic interest rates on the SafeSave app. From EasiSave with rates up to 10% to AutoSave reaching up to 15%, achieve your goals and live your dreams effortlessly!',
     },
   ],
 }

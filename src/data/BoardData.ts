@@ -7,11 +7,8 @@ import team_avatar_img_2 from '../../public/assets/img/team/img-2.jpg'
 import team_avatar_img_3 from '../../public/assets/img/team/img-3.jpg'
 import team_avatar_img_4 from '../../public/assets/img/team/img-4.jpg'
 // home 02
-import team_avatar_img_2_1 from '../../public/assets/img/team/home-2/user-1.jpg'
-import team_avatar_img_2_2 from '../../public/assets/img/team/home-2/user-2.jpg'
-import team_avatar_img_2_3 from '../../public/assets/img/team/home-2/user-3.jpg'
-import team_icunew from '../../public/assets/img/team/team-icunew.jpg'
-import board_chairman from '../../public/assets/img/team/board-chairman.jpg'
+
+import board_chairman from '../../public/assets/img/team/chairman-new.jpg'
 interface DataType {
   id: number
   home: number
@@ -44,17 +41,17 @@ const board_data: DataType[] = [
     id: 3,
     home: 1,
     delay: '.7s',
-    img: team_avatar_img_3,
-    title: 'Marvin McKinney',
-    designatio: 'Frontend Developer',
+    img: team_md,
+    title: 'Nabo',
+    designatio: 'Board Member',
   },
   {
     id: 4,
     home: 1,
     delay: '.9s',
-    img: team_avatar_img_3,
-    title: 'Leslie Alexander',
-    designatio: 'Backend Developer',
+    img: team_md,
+    title: 'Hon Ali',
+    designatio: 'Board Member',
   },
 ]
 

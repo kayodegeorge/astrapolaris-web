@@ -54,15 +54,6 @@ const service_data: DataType[] = [
     title: 'Advisory Services',
     delay: '.7s',
   },
-  {
-    id: 4,
-    home: 2,
-    img: service_img_4,
-    icon: service_icon_4,
-    category: 'Our services',
-    title: 'Market Research Services',
-    delay: '.9s',
-  },
 
   // service page
   {

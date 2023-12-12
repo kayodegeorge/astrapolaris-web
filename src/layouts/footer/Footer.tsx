@@ -25,30 +25,23 @@ interface Datatype {
 
 const footer_content: Datatype = {
   sm_info:
-    'Payment processing is a critical component of any business that sells goods or se Payment processing is a critical component of any.',
+    'Astra Polaris MFB is a state licensed micro finance bank  regulated by the CBN. It has distinguished itself as one of the fastest growing MFBs offering a broad range of financial services, capacity building to micro, small and medium-scale enterprises (MSMEs), Agro allied, High Net-worth individuals and investment advisory services.',
   link_title: 'Quick links',
   link_list: [
-    { title: 'About us', link: '#' },
-    { title: 'Categories', link: '#' },
+    { title: 'About us', link: '/about' },
     { title: 'Services', link: '#' },
-    { title: 'Blog Grid', link: '#' },
     { title: 'Contact Us', link: '#' },
   ],
-  post_title: 'Popular Post',
+  post_title: 'Our Products',
   post_list: [
     {
-      title: 'Ished fact that a reader',
-      publish: 'October 19, 2023',
+      title: 'AstraPay',
+      publish: 'Mobile banking platform',
       link: '#',
     },
     {
-      title: 'Will distrol acted desig',
-      publish: 'October 20, 2023',
-      link: '#',
-    },
-    {
-      title: 'Transforming Business For You',
-      publish: 'October 22, 2023',
+      title: 'SafeSave',
+      publish: 'Savings platform',
       link: '#',
     },
   ],

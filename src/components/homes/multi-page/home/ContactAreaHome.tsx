@@ -31,9 +31,9 @@ const ContactAreaHome = () => {
                 data-wow-delay='.3s'
               >
                 <Image
-                  src='/assets/img/contact/contact-1.jpg'
+                  src='/assets/img/contact/contact-us.jpg'
                   width={600}
-                  height={400}
+                  height={10}
                   alt='image-title-here'
                 />
               </div>

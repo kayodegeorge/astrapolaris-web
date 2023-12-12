@@ -51,7 +51,16 @@ const service_data: DataType[] = [
     img: service_img_3,
     icon: service_icon_3,
     category: 'Our services',
-    title: 'Advisory Services',
+    title: 'Digital Services',
+    delay: '.7s',
+  },
+  {
+    id: 3,
+    home: 2,
+    img: service_img_3,
+    icon: service_icon_3,
+    category: 'Our services',
+    title: 'Market Research',
     delay: '.7s',
   },
 

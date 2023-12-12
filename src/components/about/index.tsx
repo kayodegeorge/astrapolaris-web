@@ -21,7 +21,7 @@ const About = () => {
         <ProjectAreaHome />
         <TeamAreaHome style={true} />
         <ManagementTeamAreaHome />
-        <CtaAreaHome />
+        {/* <CtaAreaHome /> */}
       </main>
       <Footer />
     </>

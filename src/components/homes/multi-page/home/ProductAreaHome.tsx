@@ -100,7 +100,7 @@ const ProjectAreaHome = () => {
                     className='shape-1'
                     width={400}
                     height={300}
-                    src='/assets/img/process/img-2.jpg'
+                    src='/assets/img/process/safe-save.jpg'
                     alt='image-title-here'
                   />
                 </div>

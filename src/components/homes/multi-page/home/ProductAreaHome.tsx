@@ -92,17 +92,10 @@ const ProjectAreaHome = () => {
                     <Image
                       width={400}
                       height={300}
-                      src='/assets/img/process/img-1.jpg'
+                      src='/assets/img/process/wowzer.jpg'
                       alt='image-title-here'
                     />
                   </div>
-                  <Image
-                    className='shape-1'
-                    width={400}
-                    height={300}
-                    src='/assets/img/process/safe-save.jpg'
-                    alt='image-title-here'
-                  />
                 </div>
                 <div className='tp-process-counter d-flex align-items-center'>
                   <div className='tp-process-counter-icon'>

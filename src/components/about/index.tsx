@@ -18,7 +18,7 @@ const About = () => {
         <Breadcrumb title='About Us' page_title='About Us' />
         <AboutAreaHome />
 
-        <ProjectAreaHome />
+        {/* <ProjectAreaHome /> */}
         <TeamAreaHome style={true} />
         <ManagementTeamAreaHome />
         {/* <CtaAreaHome /> */}

@@ -28,8 +28,8 @@ const footer_content: Datatype = {
     'Astra Polaris MFB is a state licensed micro finance bank  regulated by the CBN. It has distinguished itself as one of the fastest growing MFBs offering a broad range of financial services, capacity building to micro, small and medium-scale enterprises (MSMEs), Agro allied, High Net-worth individuals and investment advisory services.',
   link_title: 'Quick links',
   link_list: [
-    { title: 'About us', link: '/about' },
-    { title: 'Services', link: '#' },
+    { title: 'Our Heritage', link: '/about' },
+    { title: 'Our Board', link: '#' },
     { title: 'Contact Us', link: '#' },
   ],
   post_title: 'Our Products',
@@ -128,15 +128,23 @@ const Footer = () => {
                   <div className='tp-footer-widget-content'>
                     <p>{news_title}</p>
                     <div className='tp-footer-content-email'>
-                      <form onSubmit={(e) => e.preventDefault()}>
-                        <input type='email' placeholder='Email Address' />
-                        <button>
-                          {' '}
-                          <span>
-                            <i className='fa-solid fa-paper-plane'></i>
-                          </span>
-                        </button>
-                      </form>
+                      <div
+                        className=''
+                        style={{ display: 'flex', gap: '10px' }}
+                      >
+                        <Image
+                          src='/assets/img/footer/appstore-dn.svg'
+                          alt='App Store'
+                          width={100}
+                          height={100}
+                        />
+                        <Image
+                          src='/assets/img/footer/googleplay-dn.svg'
+                          alt='App Store'
+                          width={100}
+                          height={100}
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>

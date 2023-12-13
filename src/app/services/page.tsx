@@ -1,15 +1,15 @@
-import About from '@/components/about'
+import Services from '@/components/services'
 import Wrapper from '@/layouts/Wrapper'
 import React from 'react'
 
 export const metadata = {
-  title: 'About - Astra Polaris Micro Finance Bank',
+  title: 'Services - Astra Polaris Micro Finance Bank',
 }
 
 const index = () => {
   return (
     <Wrapper>
-      <About />
+      <Services />
     </Wrapper>
   )
 }

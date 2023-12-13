@@ -51,8 +51,8 @@ const Header = ({ onePageHomeOne }: any) => {
               <div className='col-xl-3 col-6'>
                 <div className='tp-header-main-right-2 d-flex align-items-center justify-content-xl-end'>
                   <div
-                    className='tp-hero-btn mr-30'
-                    style={{ display: 'none' }}
+                    className='tp-hero-btn mr-30 '
+                    style={{ display: 'block' }}
                   >
                     <Link className='tp-btn' href='/contact'>
                       Online Banking

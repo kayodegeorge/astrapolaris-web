@@ -67,20 +67,13 @@ const AboutAreaHome = () => {
                 data-wow-delay='.3s'
               >
                 <Image
-                  width={450}
+                  width={700}
                   height={450}
                   className='img-1'
                   src='/assets/img/about/about-snap-min.jpg'
                   alt='image-title-here'
                 />
-                <div className='img-2'>
-                  <Image
-                    width={400}
-                    height={400}
-                    src='/assets/img/about/about-snap-2-min.jpg'
-                    alt='image-title-here'
-                  />
-                </div>
+
                 <Image
                   className='img-3'
                   src={about_shape_1}

@@ -1,14 +1,9 @@
 import { StaticImageData } from 'next/image'
 
-import service_img_2 from '../../public/assets/img/service/home-2/img-2.jpg'
-import service_img_1 from '../../public/assets/img/service/home-2/img-1.jpg'
+import service_img_2 from '../../public/assets/img/service/home-2/investment-1.jpg'
+import service_img_1 from '../../public/assets/img/service/home-2/loan-1.jpg'
 import service_img_3 from '../../public/assets/img/service/home-2/img-3.jpg'
-import service_img_4 from '../../public/assets/img/service/home-2/img-4.jpg'
-
-import service_icon_1 from '../../public/assets/img/service/home-2/icon-1.svg'
-import service_icon_2 from '../../public/assets/img/service/home-2/icon-2.svg'
-import service_icon_3 from '../../public/assets/img/service/home-2/icon-3.svg'
-import service_icon_4 from '../../public/assets/img/service/home-2/icon-4.svg'
+import service_img_4 from '../../public/assets/img/service/home-2/digital-services.png'
 
 import service_thumb_img_1 from '../../public/assets/img/service/img-1.jpg'
 import service_thumb_img_2 from '../../public/assets/img/service/img-2.jpg'
@@ -17,8 +12,7 @@ import service_thumb_img_3 from '../../public/assets/img/service/img-3.jpg'
 interface DataType {
   id: number
   home: number | string
-  img: StaticImageData | any
-  icon?: StaticImageData | any
+  img: string
   category?: string
   title: string
   sm_des?: string
@@ -30,8 +24,7 @@ const service_data: DataType[] = [
   {
     id: 1,
     home: 2,
-    img: service_img_1,
-    icon: service_icon_1,
+    img: '/assets/img/service/home-2/loan-1.jpg',
     category: 'Our services',
     title: 'Loan Products',
     delay: '.3s',
@@ -39,8 +32,7 @@ const service_data: DataType[] = [
   {
     id: 2,
     home: 2,
-    img: service_img_2,
-    icon: service_icon_2,
+    img: '/assets/img/service/home-2/investment-1.jpg',
     category: 'Our services',
     title: 'Saving and Investment Products',
     delay: '.5s',
@@ -48,8 +40,7 @@ const service_data: DataType[] = [
   {
     id: 3,
     home: 2,
-    img: service_img_3,
-    icon: service_icon_3,
+    img: '/assets/img/service/home-2/digital-services.png',
     category: 'Our services',
     title: 'Digital Services',
     delay: '.7s',
@@ -57,8 +48,7 @@ const service_data: DataType[] = [
   {
     id: 3,
     home: 2,
-    img: service_img_3,
-    icon: service_icon_3,
+    img: '/assets/img/service/home-2/img-3.jpg',
     category: 'Our services',
     title: 'Market Research',
     delay: '.7s',
@@ -68,7 +58,7 @@ const service_data: DataType[] = [
   {
     id: 1,
     home: 'service',
-    img: service_thumb_img_1,
+    img: '/assets/img/service/img-1.jpg',
     title: 'Propel Consulting',
     sm_des:
       "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
@@ -77,7 +67,7 @@ const service_data: DataType[] = [
   {
     id: 2,
     home: 'service',
-    img: service_thumb_img_2,
+    img: '/assets/img/service/img-2.jpg',
     title: 'Velocity Solutions',
     sm_des:
       "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
@@ -86,7 +76,7 @@ const service_data: DataType[] = [
   {
     id: 3,
     home: 'service',
-    img: service_thumb_img_3,
+    img: '/assets/img/service/img-3.jpg',
     title: 'Revive Business',
     sm_des:
       "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
@@ -95,7 +85,7 @@ const service_data: DataType[] = [
   {
     id: 2,
     home: 'service',
-    img: service_thumb_img_2,
+    img: '/assets/img/service/img-2.jpg',
     title: 'Velocity Solutions',
     sm_des:
       "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
@@ -104,7 +94,7 @@ const service_data: DataType[] = [
   {
     id: 3,
     home: 'service',
-    img: service_thumb_img_3,
+    img: '/assets/img/service/img-3.jpg',
     title: 'Revive Business',
     sm_des:
       "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",
@@ -113,7 +103,7 @@ const service_data: DataType[] = [
   {
     id: 1,
     home: 'service',
-    img: service_thumb_img_1,
+    img: '/assets/img/service/img-1.jpg',
     title: 'Propel Consulting',
     sm_des:
       "Don't just take our word for it hear what our customers have to say about us! we have helped thousand people",

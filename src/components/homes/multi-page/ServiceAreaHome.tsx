@@ -34,14 +34,15 @@ const ServiceAreaHomeTwo = () => {
                 >
                   <div className='tp-service-thumb-2 text-center'>
                     <Link href='/service-details'>
-                      <Image src={item.img} alt='image-title-here' />
+                      <Image
+                        width={300}
+                        height={300}
+                        src={item.img}
+                        alt='image-title-here'
+                      />
                     </Link>
                   </div>
-                  <div className='tp-service-icon-2'>
-                    <span>
-                      <Image src={item.icon} alt='image-title-here' />
-                    </span>
-                  </div>
+
                   <div className='tp-service-content-2'>
                     <p>{item.category}</p>
                     <h3 className='tp-service-title-2'>

@@ -187,7 +187,7 @@ const ServiceDetailsArea = () => {
                 <div
                   className='tp-service-widget-contact mb-40'
                   style={{
-                    backgroundImage: `url(/assets/img/service/service-details/img-3.jpg)`,
+                    backgroundImage: `url(/assets/img/contact/contact-man.jpg)`,
                   }}
                 >
                   <div className='tp-service-widget-contact-content text-center'>

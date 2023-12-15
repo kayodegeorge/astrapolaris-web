@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 interface social_links_type {
@@ -143,8 +144,18 @@ type copy_right_text_type = {
 const copy_right_text: copy_right_text_type = {
   copy_right: (
     <>
-      <span>
-        © AstraPolaris {new Date().getFullYear()} || All Rights Reserved{' '}
+      <span className='flex '>
+        © AstraPolaris {new Date().getFullYear()} || Lisenced by Central Bank of
+        Nigeria.
+        <span>
+          <Image
+            className='mt-1'
+            width={50}
+            height={50}
+            alt='cbn logo'
+            src='/assets/img/logo/cbn-plain.png'
+          />
+        </span>
       </span>
     </>
   ),

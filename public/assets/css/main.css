@@ -7803,18 +7803,22 @@ blockquote::after {
 }
 .tp-hero-btn {
   line-height: 1;
+  
 }
 .tp-hero-btn .tp-btn {
   padding: 23px 44px;
+
 }
 @media (max-width: 575px) {
   .tp-hero-btn {
     margin-bottom: 20px;
+    display:hidden;
   }
 }
 .tp-hero-button-wrapper {
   animation-delay: 0.9s;
   animation-duration: 1s;
+  display:hidden;
 }
 .tp-hero-thumb {
   padding-left: 77px;

@@ -11,12 +11,9 @@ interface DataType {
 
 const hero_content: DataType = {
   subtitle: 'We Are Astra',
-  title: <>We are The Bank of The Future</>,
+  title: <>Astra Polaris, The Bank of The Future</>,
   sm_des: (
-    <>
-      Astrapolaris helps to make our customers happy by creating wealth to the
-      stakeholders.
-    </>
+    <>... making our customers happy by creating wealth to the stakeholders.</>
   ),
   phone: '+234-902-0353-234',
 }

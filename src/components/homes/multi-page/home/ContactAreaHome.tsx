@@ -31,10 +31,10 @@ const ContactAreaHome = () => {
                 data-wow-delay='.3s'
               >
                 <Image
-                  src='/assets/img/contact/contact-us.jpg'
-                  width={600}
-                  height={10}
-                  alt='image-title-here'
+                  src='/assets/img/contact/contact-man.jpg'
+                  width={400}
+                  height={100}
+                  alt='Contact us'
                 />
               </div>
             </div>

@@ -50,11 +50,13 @@ const Header = ({ onePageHomeOne }: any) => {
               </div>
               <div className='col-xl-3 col-6'>
                 <div className='tp-header-main-right-2 d-flex align-items-center justify-content-xl-end'>
-                  <div
-                    className='tp-hero-btn mr-30 '
-                    style={{ display: 'block' }}
-                  >
-                    <Link className='tp-btn' href='/contact'>
+                  <div className='tp-hero-btn mr-30'>
+                    <Link
+                      className='tp-btn hidden'
+                      href='/contact'
+                      style={{}}
+                      aria-disabled
+                    >
                       Online Banking
                       <span>
                         <i className='fa-regular fa-arrow-right'></i>

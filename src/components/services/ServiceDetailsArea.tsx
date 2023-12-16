@@ -5,7 +5,7 @@ import Image from 'next/image'
 interface DataType {
   title: string
   sm_des_1: string
-  sm_des_2: string
+
   features: {
     img: any
     title: string
@@ -24,32 +24,36 @@ interface DataType {
 }
 // service details content
 const service_details: DataType = {
-  title: '(Content title goes here)',
+  title: 'Our Services',
   sm_des_1:
-    'Lorem ipsum dolor sit amet, consectetur adip lorem orem ipsum dolor sit amet, consectetur adip orem ipsum dolor sit amet, consectetur adip orem ipsum dolor sit amet, consectetur adip',
-  sm_des_2:
-    'Aliquam eros justo, posuere loborti viverra laoreet matti ullamcorper posuere viverra .Aliquam eros justo, posuere lobortis no vive rra laoreet augue mattis fermentum ullamcorper viverra laoreet Aliquam eros justo',
+    'Astra Polaris Microfinance Bank is your financial partner of choice, specializing in a comprehensive range of services to meet your diverse needs. From flexible loan options tailored for all, including the underserved and unbanked, to attractive deposit and savings solutions, we are dedicated to fostering financial inclusivity. Experience seamless savings with our innovative SafeSave app, ensuring your financial goals are within easy reach. Whether you are an entrepreneur, an average saver, or a digital merchant, Astra Polaris is here to elevate your financial journey. Connect with us for a personalized and rewarding banking experience.',
+
   features: [
     {
       img: '/assets/img/service/service-details/icon-1.svg',
-      title: 'Loan Products',
+      title: 'Loans',
       sm_des:
-        'Lorem Ipsum is simply is dumiom in thi yadvice design in us repairs and  is text Lorem Ipsum is simply design company  text Lorem Ipsum',
+        'Astra Polaris microfinance bank is committed to addressing financial challenges, extends attractive facilities beyond the elite class to the underserved and unbanked populations. Our diverse loan packages cater to everyone, from the average tomato seller to the Instagram merchant. Connect with us to explore tailored options that perfectly fit your needs.',
     },
     {
       img: '/assets/img/service/service-details/icon-2.svg',
       title: 'Deposits',
       sm_des:
-        'Lorem Ipsum is simply is dumiom in thi yadvice design in us repairs and  is text Lorem Ipsum is simply design company  text Lorem Ipsum',
+        'Elevate your savings journey with Astra Polaris Microfinance Bank. Our diverse deposit products and services are designed to accommodate individuals, communities, small-scale businesses, cooperatives, religious bodies, and even provide tailored solutions for your childrens future. Connect with us today to explore the ideal deposit options that align with your financial goals.',
+    },
+    {
+      img: '/assets/img/service/service-details/icon-2.svg',
+      title: 'Savings',
+      sm_des:
+        'Astra Polaris Microfinance Bank revolutionizes savings through its innovative platform, SafeSave. Seamlessly automate your savings, monitor accounts, and enjoy tailored solutions for individuals, communities, small-scale businesses, cooperatives, and even children. With our commitment to financial inclusivity, SafeSave ensures a convenient and inclusive savings experience, making Astra Polaris your ideal partner in achieving your financial goals.',
     },
   ],
-  title_2: 'Other stuff here',
+  title_2: 'Financial Wellness Solutions',
   sm_des_3:
-    'Aliquam eros justo, posu ere loborti viver lao reet matti ullam corpe.Aliquam eros justo, posuere lobortis non',
+    'Experience comprehensive financial wellness with Astra Polaris. Benefit from personalized financial advice, educational resources, and tools to enhance your overall financial health. Our commitment extends beyond transactions; we are your partner in achieving financial success.',
   sm_des_4:
-    'Aliquam eros justo, posuere loboh viverra laoreet matti ullamcorper posuere viverr.Aliquam eros justo, posuere lobortis non, viverra laoreet augue mattis fermentum ullamcorper.',
-  quote:
-    'Aliquam eros justo, posuere loborti viverra laoreet matti uacorper posuere viverra .Aliquam eros no justo des posuere lobortis non, viverra laoreet ue mattis fermentum ullamcorper viverra laoreet. Aliquam eros industry posuere loborti viverra laoreet matti ullamcorpe',
+    'Micro-Business Support: Empowering micro-businesses, Astra Polaris provides specialized support services tailored to the unique needs of small enterprises. From financial education to customized financial solutions, we are dedicated to fueling the growth of your business.',
+  quote: 'Astra Polaris Micro-Finance Bank, saying the future is now.',
   service_title: 'Our services',
   service_list: [
     { title: 'Loans', link: '#' },
@@ -59,15 +63,14 @@ const service_details: DataType = {
     { title: 'Savings', link: '#' },
   ],
   some_list: [
-    'Mistakes To Avoid to dum',
-    'Startup industry stan Aliquam',
-    'Knew About Fots text posuere',
+    'Tailored Loan Solutions',
+    'Innovative SafeSave App',
+    'Inclusive Financial Services',
   ],
 }
 const {
   title,
   sm_des_1,
-  sm_des_2,
   features,
   title_2,
   sm_des_3,
@@ -88,16 +91,15 @@ const ServiceDetailsArea = () => {
               <div className='tp-service-details-wrapper'>
                 <div className='tp-service-details-thumb'>
                   <Image
-                    src='/assets/img/service/service-details/img-1.jpg'
-                    width={500}
-                    height={500}
+                    src='/assets/img/service/service-try.jpg'
+                    width={20}
+                    height={20}
                     style={{ width: '100%', height: 'auto' }}
                     alt='image-title-here'
                   />
                 </div>
                 <h3 className='tp-service-details-title'>{title}</h3>
                 <p>{sm_des_1}</p>
-                <p>{sm_des_2}</p>
 
                 <div className='tp-service-details-box d-flex mb-60'>
                   {features.map((item, index) => (
@@ -124,44 +126,12 @@ const ServiceDetailsArea = () => {
                     </div>
                   ))}
                 </div>
-                <div className='tp-service-details-box d-flex mb-60'>
-                  {features.map((item, index) => (
-                    <div
-                      key={index}
-                      className={`tp-service-details-item d-flex ${
-                        index === 0 ? 'mr-30' : ''
-                      }`}
-                    >
-                      <div className='tp-service-details-icon'>
-                        <Image
-                          width={300}
-                          height={200}
-                          src={item.img}
-                          alt='image-title-here'
-                        />
-                      </div>
-                      <div className='tp-service-details-content'>
-                        <h3 className='tp-service-details-subtitle'>
-                          {item.title}
-                        </h3>
-                        <p>{item.sm_des}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+
                 <div className='tp-service-details-box-2 d-flex mb-40'>
                   <div className='tp-service-details-box-content mr-30'>
                     <h3 className='tp-service-details-subtitle-2'>{title_2}</h3>
                     <p>{sm_des_3}</p>
                     <p>{sm_des_4}</p>
-                  </div>
-                  <div className='tp-service-details-box-thumb'>
-                    <Image
-                      width={500}
-                      height={500}
-                      src='/assets/img/service/service-details/img-2.jpg'
-                      alt='image-title-here'
-                    />
                   </div>
                 </div>
 
@@ -199,20 +169,6 @@ const ServiceDetailsArea = () => {
                     <p>Requesting A Call:</p>
                     <a href='tel:55555555'>+234 902 0353 234</a>
                   </div>
-                </div>
-
-                <div className='tp-service-widget-download mb-40'>
-                  <a href='#'>
-                    <span>
-                      Download Profile
-                      <Image
-                        width={500}
-                        height={500}
-                        src='/assets/img/service/service-details/icon-3.jpg'
-                        alt='image-title-here'
-                      />
-                    </span>
-                  </a>
                 </div>
 
                 <div className='tp-service-widget-list'>

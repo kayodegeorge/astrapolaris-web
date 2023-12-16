@@ -44,8 +44,8 @@ const menu_data: DataType[] = [
     has_dropdown: true,
     sub_menus: [
       { link: '/services', title: 'Loans' },
-      { link: '/services-details', title: ' Deposits' },
-      { link: '/services-details', title: 'Investments' },
+      { link: '/services', title: ' Deposits' },
+      { link: '/services', title: 'Savings' },
     ],
   },
   // {

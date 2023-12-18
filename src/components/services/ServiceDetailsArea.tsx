@@ -64,6 +64,7 @@ const service_details: DataType = {
   ],
   some_list: [
     'Tailored Loan Solutions',
+    'Make Payments with AstraPay',
     'Innovative SafeSave App',
     'Inclusive Financial Services',
   ],

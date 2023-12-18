@@ -15,7 +15,7 @@ const ContactFormHome = () => {
             <div className='form-input'>
               <div>
                 <FaLocationDot size={30} />
-                <span>
+                <span style={{ fontSize: '11px' }}>
                   Astra Polaris Building, Onikolobo, Abeokuta, Ogun State.
                 </span>
               </div>
@@ -25,7 +25,7 @@ const ContactFormHome = () => {
             <div className='form-input'>
               <div>
                 <MdEmail size={30} />
-                <span>info@astrapolaris.com</span>
+                <span style={{ fontSize: '12px' }}>info@astrapolaris.com</span>
               </div>
             </div>
           </div>
@@ -34,7 +34,7 @@ const ContactFormHome = () => {
             <div className='form-input'>
               <div>
                 <FaPhoneAlt size={30} />
-                <span>+234 902 0353 234</span>
+                <span style={{ fontSize: '12px' }}>+234 902 0353 234</span>
               </div>
             </div>
           </div>

@@ -145,7 +145,7 @@ const copy_right_text: copy_right_text_type = {
   copy_right: (
     <>
       <span className='flex '>
-        © AstraPolaris {new Date().getFullYear()} || Lisenced by Central Bank of
+        © AstraPolaris {new Date().getFullYear()} || Licensed by Central Bank of
         Nigeria.
         <span>
           <Image

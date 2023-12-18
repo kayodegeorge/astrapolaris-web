@@ -11,15 +11,12 @@ const index = () => {
   useEffect(() => {
     const audio = new Audio('/assets/astra-anthem.mp3')
     audio.play()
-
+    audio.volume = 0.5 // Set volume (0.0 to 1.0)
+    audio.loop = true
     // Optionally, you can loop the music
     audio.addEventListener('ended', () => {
       audio.play()
     })
-
-    return () => {
-      audio.pause()
-    }
   }, [])
   return (
     <Wrapper>

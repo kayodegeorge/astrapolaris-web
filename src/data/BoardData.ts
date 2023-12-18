@@ -26,8 +26,7 @@ const board_data: DataType[] = [
     home: 1,
     delay: '.5s',
     img: board_chairman,
-    title:
-      'Toye Osungbesan, , LLB, BL, LLM, MBA, ACIS, ACIPM, ACIARB, AMNIM, ACITN',
+    title: 'Toye Osungbesan',
     designatio: 'Board Chairman',
   },
   {
@@ -35,7 +34,7 @@ const board_data: DataType[] = [
     home: 1,
     delay: '.3s',
     img: team_md,
-    title: 'Akintunde Ogunsan, LLB, B.L, PGD MGT, FCIT',
+    title: 'Akintunde Ogunsan',
     designatio: 'Managing Director',
   },
   {
@@ -43,7 +42,7 @@ const board_data: DataType[] = [
     home: 1,
     delay: '.7s',
     img: ajanaku_board,
-    title: 'Olusegun Ajanaku, B.Ed, M.Sc, Phd, MINSM, PLI',
+    title: 'Olusegun Ajanaku, Dr',
     designatio: 'Board Member',
   },
   {
@@ -51,7 +50,7 @@ const board_data: DataType[] = [
     home: 1,
     delay: '.9s',
     img: olusegun_board,
-    title: 'Olusegun Asekun',
+    title: 'Olusegun Asekun, Dr',
     designatio: 'Board Member',
   },
 ]

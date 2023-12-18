@@ -45,8 +45,8 @@ const footer_content: Datatype = {
       link: '#',
     },
   ],
-  news_text: 'Newsletter',
-  news_title: "It's important for businesses to carefully consider their pay.",
+  news_text: 'Product Downloads',
+  news_title: 'You can download our products below',
   footer_links: ['About us', 'Services', 'Contact Us'],
 }
 const {

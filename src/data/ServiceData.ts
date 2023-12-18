@@ -34,7 +34,7 @@ const service_data: DataType[] = [
     home: 2,
     img: '/assets/img/service/home-2/investment-1.jpg',
     category: 'Our services',
-    title: 'Saving and Investment Products',
+    title: 'Saving & Investment Products',
     delay: '.5s',
   },
   {

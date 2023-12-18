@@ -57,14 +57,14 @@ const social_links_2: social_links_type_2[] = [
     icon: 'fa-brands fa-facebook-f',
   },
   {
-    link: 'http://twitter.com',
+    link: 'http://twitter.com/astrapolarisMFB',
     color: '',
     icon: 'fa-brands fa-twitter',
   },
   {
-    link: 'http://www.linkedin.com',
-    color: 'footer-linkedin',
-    icon: 'fa-brands fa-linkedin-in',
+    link: 'http://www.instagram.com/astrapolaris_mfb',
+    color: 'footer-instagram',
+    icon: 'fa-brands fa-instagram',
   },
   {
     link: 'http://www.instagram.com',
@@ -99,12 +99,12 @@ interface DataType {
 const team_social_data: DataType[] = [
   {
     id: 1,
-    link: 'http://facebook.com',
+    link: 'http://facebook.com/ astrapolarisMFB',
     icon: 'fa-brands fa-facebook-f',
   },
   {
     id: 2,
-    link: 'http://instagram.com',
+    link: 'http://instagram.com/astrapolaris_mfb',
     icon: 'fa-brands fa-instagram',
   },
   {

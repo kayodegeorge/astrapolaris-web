@@ -28,10 +28,10 @@ const BoardAreaHome = ({ style }: any) => {
             </div>
           </div>
           <div className='row'>
-            {board_data.slice(0, 4).map((item, index) => (
+            {board_data.slice(0, 5).map((item, index) => (
               <>
                 {item.home === 1 && (
-                  <div key={index} className='col-lg-3 col-md-6'>
+                  <div key={index} className='col-lg-4 col-md-6'>
                     <div
                       className='tp-team-item p-relative wow fadeInUp'
                       data-wow-duration='1s'

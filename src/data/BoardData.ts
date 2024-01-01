@@ -8,6 +8,7 @@ import team_md from '../../public/assets/img/team/team-md.jpg'
 import board_chairman from '../../public/assets/img/team/chairman-new.jpg'
 import ajanaku_board from '../../public/assets/img/team/ajanaku-board.jpg'
 import olusegun_board from '../../public/assets/img/team/olusegun-board.jpg'
+import doctor_board from '../../public/assets/img/team/doctor-board.jpeg'
 interface DataType {
   id: number
   home: number
@@ -51,6 +52,14 @@ const board_data: DataType[] = [
     delay: '.9s',
     img: olusegun_board,
     title: 'Olusegun Asekun, Dr',
+    designatio: 'Board Member',
+  },
+  {
+    id: 5,
+    home: 1,
+    delay: '.9s',
+    img: doctor_board,
+    title: 'Oluseni Ogunsan, Dr',
     designatio: 'Board Member',
   },
 ]

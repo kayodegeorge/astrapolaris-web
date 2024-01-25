@@ -93,45 +93,20 @@ export const SocialLinksTwo = () => {
 // team social links
 interface DataType {
   id: number
-  link: string
-  icon: string
+  text: string
 }
 const team_social_data: DataType[] = [
   {
     id: 1,
-    link: 'http://facebook.com/ astrapolarisMFB',
-    icon: 'fa-brands fa-facebook-f',
-  },
-  {
-    id: 2,
-    link: 'http://instagram.com/astrapolaris_mfb',
-    icon: 'fa-brands fa-instagram',
-  },
-  {
-    id: 3,
-    link: 'http://twitter.com',
-    icon: 'fa-brands fa-twitter',
-  },
-  {
-    id: 4,
-    link: 'http://youtube.com',
-    icon: 'fa-brands fa-linkedin-in',
+
+    text: 'Loving dad again',
   },
 ]
 
 export const TeamSocialLinks = () => {
   return (
     <>
-      {team_social_data.map((t_item, t_index) => (
-        <Link
-          key={t_index}
-          href={t_item.link}
-          className={`icon-${t_item.id}`}
-          target='_blank'
-        >
-          <i className={t_item.icon}></i>{' '}
-        </Link>
-      ))}
+      <p>hello world</p>
     </>
   )
 }
